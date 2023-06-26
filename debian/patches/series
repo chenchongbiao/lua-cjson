@@ -1,0 +1,4 @@
+disable-sparse-array-test
+disable-utf16-test
+lua5.2-function-names
+lua5.3-unpack

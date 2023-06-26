@@ -1,0 +1,18 @@
+diff --git a/tests/test.lua b/tests/test.lua
+index 31e7270..5d5c359 100755
+--- a/tests/test.lua
++++ b/tests/test.lua
+@@ -289,9 +289,10 @@ local cjson_tests = {
+     { "Encode sparse table as array #2",
+       json.encode, { { [1] = "one", [4] = "sparse test" } },
+       true, { '["one",null,null,"sparse test"]' } },
+-    { "Encode sparse array as object",
+-      json.encode, { { [1] = "one", [5] = "sparse test" } },
+-      true, { '{"1":"one","5":"sparse test"}' } },
++    -- buggy: the sequence of sparse array cannot be predetermined
++    -- { "Encode sparse array as object",
++    --   json.encode, { { [1] = "one", [5] = "sparse test" } },
++    --   true, { '{"1":"one","5":"sparse test"}' } },
+     { "Encode table with numeric string key as object",
+       json.encode, { { ["2"] = "numeric string key test" } },
+       true, { '{"2":"numeric string key test"}' } },

@@ -1,5 +1,36 @@
-template-repository (1.0-1) unstable; urgency=medium
+lua-cjson (2.1.0+dfsg-2.2) unstable; urgency=medium
 
-  * Initial release
+  * Non-maintainer upload.
+  * Add lua version 5.3 (Closes: #872599, #942569).
+  * Add lua version 5.4.
+  * Add Rules-Requires-Root: no.
+  * Add hardening options.
+  * Bump debhelper compat to 13.
+  * Bump Standards-Version to 4.6.1.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Boyuan Yang ]
+  * debian/control: Migrate Vcs-* fields to Salsa lua-team.
+  * debian/copyright: Use latest machine-readable copyright format.
+
+ -- Yangfl <mmyangfl@gmail.com>  Thu, 01 Dec 2022 00:26:18 +0800
+
+lua-cjson (2.1.0+dfsg-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * debian/control: Drop explicit Pre-Depends on multiarch-support
+    (Closes: #870548).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 20 Jan 2018 21:15:36 +0100
+
+lua-cjson (2.1.0+dfsg-2) unstable; urgency=low
+
+  * Add debian/watch file.
+
+ -- Dmitry E. Oboukhov <unera@debian.org>  Mon, 24 Sep 2012 11:50:30 +0400
+
+lua-cjson (2.1.0+dfsg-1) unstable; urgency=low
+
+  * Initial release. (Closes: #685591)
+
+ -- Dmitry E. Oboukhov <unera@debian.org>  Fri, 24 Aug 2012 14:35:49 +0400
+
